@@ -1,0 +1,22 @@
+.item-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.item-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.item-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.item-quantity {
+  margin: 0 10px;
+  font-weight: bold;
+}
