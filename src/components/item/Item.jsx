@@ -1,13 +1,32 @@
+import { useState } from "react";
 import "./Item.scss";
 
-export function Item({ image, quantity }) {
+export function Item() {
+  const [count, setCount] = useState(0);
+
   return (
     <div className="item-card">
-      <img src={image} alt="Item" className="item-image" />
+      <img src="/src/assets/sorvete.jpg" alt="Item" className="item-image" />
+      <h2>Sorvete de morango</h2>
+      <h3>R$ 10,00</h3>
       <div className="item-actions">
-        <button>-</button>
-        <span className="item-quantity">{quantity}</span>
-        <button>+</button>
+        <button
+          onClick={() => {
+            if (count > 0) {
+              setCount(count - 1);
+            }
+          }}
+        >
+          -
+        </button>
+        <span className="item-quantity">{count}</span>
+        <button
+          onClick={() => {
+            setCount(count + 1);
+          }}
+        >
+          +
+        </button>
       </div>
     </div>
   );

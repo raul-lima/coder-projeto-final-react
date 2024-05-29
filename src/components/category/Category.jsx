@@ -10,7 +10,6 @@ export function Category({ category }) {
       />
       <div className="category-body-container">
         <h2>{title}</h2>
-        <p>Comprar Agora</p>
       </div>
     </div>
   );

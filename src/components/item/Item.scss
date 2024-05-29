@@ -1,12 +1,15 @@
 .item-card {
+  width: 300px;
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0px 10px;
 }
 
 .item-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -17,6 +20,6 @@
 }
 
 .item-quantity {
-  margin: 0 10px;
+  margin: 0px 10px;
   font-weight: bold;
 }
