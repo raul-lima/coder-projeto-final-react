@@ -23,7 +23,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(); // Ensure getFirestore is initialized with the Firebase app
+export const db = getFirestore(); // Ensure getFirestore is initialized with the Firebase app
 
 export const addCollectionAndDocuments = async (
   collectionKey,

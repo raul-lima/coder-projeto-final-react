@@ -3,13 +3,17 @@ import {
   addCollectionAndDocuments,
   getCategoriesAndDocuments,
 } from "../../utils/firebase";
+
 import { SHOP_DATA } from "../../shop-data";
 
 export function CategoriesPreview() {
-  const [categories, setCategories] = useState({});
-  /*   useEffect(() => {
+
+
+    const [categories, setCategories] = useState({});
+
+    useEffect(() => {
     addCollectionAndDocuments("categories", SHOP_DATA);
-  }, []); */
+      }, []); 
 
   useEffect(() => {
     const getCategories = async () => {
